@@ -3,8 +3,14 @@
 
 int main(int argc, string argv[])
 {
-    // TODO:
-    // if argc == 2 print hello, argv[1]
-    // else print hello, world
-    return 0;
+    // If the user provided exactly one argument (their name)
+    if (argc == 2)
+    {
+        printf("hello, %s\n", argv[1]);
+    }
+    // If the user provided no arguments or too many
+    else
+    {
+        printf("hello, world\n");
+    }
 }
